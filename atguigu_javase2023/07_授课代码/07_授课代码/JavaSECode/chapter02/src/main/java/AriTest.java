@@ -35,6 +35,11 @@ class AriTest {
 		int j3 = -5;
 		System.out.println(i3 % j3); //2
 
+		int ii1 = -12;
+//		int ii2 = -5;
+		int ii2 = 5;
+		System.out.println("ii1%ii2:" + ii1%ii2);	//结果都一样，符号和被摸树一样
+
 		int i4 = -12;
 		int j4 = -5;
 		System.out.println(i4 % j4); //-2
