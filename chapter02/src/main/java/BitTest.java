@@ -10,14 +10,14 @@
 << : 在一定范围内，每向左移动一位，结果就在原有的基础上 * 2。（对于正数、负数都适用）
 >> : 在一定范围内，每向右移动一位，结果就在原有的基础上 / 2。（对于正数、负数都适用）
 
-3. 面试题：高效的方式计算2 * 8 ？ 
+3. 面试题：高效的方式计算2 * 8 ？  2<<3
 
 2 << 3 或 8 << 1
 
 */
 class BitTest {
 	public static void main(String[] args) {
-		int num1 = 7;
+		int num1 = 7;//111 <<1 = 1110 = 2+4+8; 7<<1 = 7*2
 		System.out.println("num1 << 1 : " + (num1 << 1));
 		System.out.println("num1 << 2 : " + (num1 << 2));
 		System.out.println("num1 << 3 : " + (num1 << 3));
@@ -31,6 +31,9 @@ class BitTest {
 
 		System.out.println(~9);
 		System.out.println(~-10);
+
+		//如何高效运算2*8
+		System.out.println("2*8="+(8<<1));
 
 		
 		
