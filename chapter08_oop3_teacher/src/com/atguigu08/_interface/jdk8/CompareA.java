@@ -18,7 +18,7 @@ public interface CompareA {
         System.out.println("CompareA:北京");
     }
 
-    //方法：jdk8中：默认方法
+    //方法：jdk8中：默认方法，接口中默认方法，接口实现类可以调用
     public default void method2(){
         System.out.println("CompareA:上海");
     }

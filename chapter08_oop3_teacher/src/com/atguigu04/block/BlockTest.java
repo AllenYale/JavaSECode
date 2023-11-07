@@ -10,14 +10,21 @@ package com.atguigu04.block;
  */
 public class BlockTest {
     public static void main(String[] args) {
-        System.out.println(Person.info);
-        System.out.println(Person.info);
+//        System.out.println(Person.info);
+//        System.out.println(Person.info);
 
 
         Person p1 = new Person();
-        Person p2 = new Person();
-        System.out.println(p1.age);//1
+//        Person p2 = new Person();
+//        System.out.println(p1.age);//1
 //        p1.eat();
+    }
+
+    //非静态、可以调用静态；
+    //字符串数组，不能直接初始化；需要用到new 开辟空间。
+    public void test(){
+//        main({"aa"});
+        main(new String[]{"aa"});
     }
 }
 

@@ -18,7 +18,8 @@ public class OuterClassTest {
 //        Person.Bird bird = new Person.Bird(); //报错
 
         Person p1 = new Person();
-        Person.Bird bird = p1.new Bird();//正确的
+//        Person.Bird bird = p1.new Bird();//正确的
+        Person.Bird bird = p1.new Bird();
         bird.eat();
         bird.show("黄鹂");
 
@@ -46,9 +47,9 @@ class Person{ //外部类
 
         public void show(String name){
             System.out.println("age = " + age);//省略了Person.this
-            System.out.println("name = " + name);
-            System.out.println("name = " + this.name);
-            System.out.println("name = " + Person.this.name);
+            System.out.println("name = " + name);//形参name
+            System.out.println("name = " + this.name);//自身（内部类）name
+            System.out.println("name = " + Person.this.name);//外部类.this.name
         }
 
         public void show1(){

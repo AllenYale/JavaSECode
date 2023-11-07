@@ -50,7 +50,7 @@ class F{
     public void method(){
         final int num;
         num = 10;
-//        num++;
+//        num++;    //Variable 'num' might already have been assigned to
         System.out.println(num);
     }
 

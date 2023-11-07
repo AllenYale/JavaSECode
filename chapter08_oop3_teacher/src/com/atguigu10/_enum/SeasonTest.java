@@ -16,6 +16,7 @@ public class SeasonTest {
 
         System.out.println(Season.SUMMER.getSeasonName());
         System.out.println(Season.SUMMER.getSeasonDesc());
+        System.out.println(Season.AUTUMN.getSeasonDesc());
     }
 }
 

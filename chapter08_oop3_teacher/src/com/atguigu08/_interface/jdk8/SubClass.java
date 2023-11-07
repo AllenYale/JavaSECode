@@ -11,9 +11,9 @@ package com.atguigu08._interface.jdk8;
 public class SubClass extends SuperClass implements CompareA,CompareB{
 
     @Override
-    public void method2() {
-        System.out.println("SubClass:上海");
-    }
+//    public void method2() {
+//        System.out.println("SubClass:上海");
+//    }
 
     public void method3(){
         System.out.println("SubClass:广州");
