@@ -58,13 +58,13 @@ public class EvenNumberTest {
                         Thread.currentThread().getPriority() + ":" + i);
             }
 
-//            if(i == 20){
-//                try {
-//                    t1.join();
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-//            }
+            if(i == 20){
+                try {
+                    t1.join();//某个线程.join()  某个线程插队了，被插队的线程阻塞了。
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
 
         }
 
