@@ -7,7 +7,7 @@ import java.util.concurrent.FutureTask;
  * 创建多线程的方式三：实现Callable （jdk5.0新增的）
  */
 //1.创建一个实现Callable的实现类
-class NumThread implements Callable {
+class NumThread implements Callable<Object> {
     //2.实现call方法，将此线程需要执行的操作声明在call()中
     @Override
     public Object call() throws Exception {
