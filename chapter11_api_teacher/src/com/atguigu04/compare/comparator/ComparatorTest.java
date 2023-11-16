@@ -17,6 +17,14 @@ import java.util.Comparator;
 public class ComparatorTest {
 
     @Test
+    public void test00(){
+        String str = "hello";
+        String substring = str.substring(0, 1);
+        String substring1 = str.substring(0, 1);
+        System.out.println(substring1 == substring);
+    }
+
+    @Test
     public void test1(){
         Product[] arr = new Product[5];
         arr[0] = new Product("HuaweiMate50pro",6299);
