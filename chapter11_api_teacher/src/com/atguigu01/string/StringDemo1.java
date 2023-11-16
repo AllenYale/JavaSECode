@@ -70,7 +70,14 @@ public class StringDemo1 {
         System.out.println();
 
         String s8 = s5.intern(); //intern():返回的是字符串常量池中字面量的地址
-        System.out.println(s3 == s8);//true
+        int[] irr = {1,2,3};
+        char[] crr = {1};
+//        char[] crr2 = {2};
+//        crr2 = {3}; 数组静态初始化不能拆开写
+        String s9 = new String(new char[]{'a','b'})/*.intern()*/;
+        System.out.println(s9=="ab");
+
+//        System.out.println(s3 == s8);//true
 
     }
 

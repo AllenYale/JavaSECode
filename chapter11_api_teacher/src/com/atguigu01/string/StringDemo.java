@@ -12,6 +12,12 @@ import org.junit.Test;
  */
 public class StringDemo {
     @Test
+    public void testallen01(){
+        String s1 = "allen";
+        String s2 = "allen";
+        System.out.println(s1 == s2);
+    }
+    @Test
     public void test1(){
         String s1 = "hello";    //字面量的定义方式
         String s2 = "hello";
@@ -40,7 +46,7 @@ public class StringDemo {
         String s1 = "hello";
         String s2 = "hello";
 
-        s2 += "world";
+        s2 += "world";  //修改后，等于new一个字符串，存在堆中。
 
         System.out.println(s1); //hello
         System.out.println(s2);//helloworld
