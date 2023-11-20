@@ -1,5 +1,7 @@
 package com.atguigu01.net;
 
+import org.junit.Test;
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
@@ -43,5 +45,17 @@ public class InetAddressTest {
             e.printStackTrace();
         }
 
+    }
+
+    @Test
+    public void test01(){
+        try {
+            InetAddress inetAddress = InetAddress.getByName("www.atguigu.com");
+            System.out.println("inetAddress = " + inetAddress);
+            InetAddress inetAddressLocal = InetAddress.getLocalHost();
+            System.out.println("inetAddressLocal = " + inetAddressLocal);
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
     }
 }
