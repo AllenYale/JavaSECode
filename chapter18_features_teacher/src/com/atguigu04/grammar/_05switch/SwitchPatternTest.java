@@ -14,7 +14,7 @@ public class SwitchPatternTest {
     public static void main(String[] args) {
 
         System.out.println(formatter(12));
-        System.out.println(formatterSwitchPattern(12));
+//        System.out.println(formatterSwitchPattern(12));
 
 
     }
@@ -38,7 +38,7 @@ public class SwitchPatternTest {
     /*
     * JDK17中switch的模式匹配
     * */
-    static String formatterSwitchPattern(Object o) {
+   /* static String formatterSwitchPattern(Object o) {
 
         String formatted = switch(o){
             case Integer i:
@@ -55,5 +55,5 @@ public class SwitchPatternTest {
         };
 
         return formatted;
-    }
+    }*/
 }

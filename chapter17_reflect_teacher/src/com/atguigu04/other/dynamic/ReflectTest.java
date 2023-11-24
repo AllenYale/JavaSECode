@@ -14,7 +14,7 @@ import java.util.Date;
  * @Create 11:31
  * @Version 1.0
  */
-public class ReflectTest {
+public class ReflectTest<T> {
 
     //体会：静态性
     public Person getInstance(){
